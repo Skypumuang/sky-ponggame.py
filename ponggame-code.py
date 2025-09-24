@@ -96,7 +96,8 @@ def draw_game():
     ax.axis('off')
     st.pyplot(fig)
 
-st.title("Streamlit Pong")
+st.title("Pong Game")
+st.subheader("make by ai")
 st.markdown("Use the slider to move your paddle (left). The right paddle is controlled by AI.")
 
 player_y_new = st.slider("Player Paddle Position", 0, HEIGHT - PADDLE_HEIGHT, st.session_state.player_y)
