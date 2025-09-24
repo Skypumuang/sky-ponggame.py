@@ -109,7 +109,7 @@ if st.button("Restart Game"):
     reset_ball()
     st.session_state.score = [0, 0]
 
-draw_game(3)
+draw_game(arg)
 st.write(f"**Score:** You {st.session_state.score[0]} : AI {st.session_state.score[1]}")
 
 if st.button("Next Frame"):
